@@ -15,6 +15,10 @@ If you want pixel-perfect text layouts — for example in a canvas editor or whe
 
 ---
 
+## Demo
+
+https://codepen.io/t-book/pen/RNWzazo?editors=1111
+
 ## Usage
 
 ```html
