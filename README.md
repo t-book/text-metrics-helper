@@ -7,7 +7,6 @@ A small JavaScript utility for measuring **exact text metrics** in the browser:
 - Compute **exact container heights** for a given number of lines.
 - Works in all modern browsers (Chrome, Firefox, Safari, Edge).
 
-Perfect for pixel-perfect typography, custom editors, or design tools.
 
 ## Why This Exists
 
@@ -57,26 +56,20 @@ Returns the minimal line-height (unitless) that fully fits the reference text wi
 Returns the current line-height (unitless) as used by the browser.
 If line-height: normal is set, an estimated default value is returned.
 
-getHeightForLines(lineCount, lineHeight?)
+`getHeightForLines(lineCount, lineHeight?)`
 
 Returns the pixel height for a given number of lines using either:
+- a custom lineHeight (unitless)
+- or the element's current line-height if none is provided.
 
-a custom lineHeight (unitless)
-
-or the element's current line-height if none is provided.
-
-getMinHeightForLines(lineCount)`
+`getMinHeightForLines(lineCount)`
 
 Returns the pixel height for a given number of lines using the minimal line-height.
 
 `getMetrics()`
 
 Returns an object containing:
-
-fontSize (px)
-
-ascent, descent (px)
-
-minLineHeight (unitless)
-
-currentLineHeight (unitless)
+- fontSize (px)
+- ascent, descent (px)
+- minLineHeight (unitless)
+- currentLineHeight (unitless)
